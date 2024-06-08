@@ -7,7 +7,7 @@ flowchart TD
     A[Inicio] --> B[Generación de Claves]
     B --> C[Seleccionar dos números primos grandes p y q]
     C --> D[Calcular n = p * q]
-    D --> E[Calcular la función totiente φ(n) = (p - 1) * (q - 1)]
+    D --> E[Calcular la función totiente phi(n) = (p - 1) * (q - 1)]
     E --> F[Elegir exponente de cifrado e]
     F --> G[Calcular exponente de descifrado d]
     G --> H{Claves generadas}
@@ -25,5 +25,6 @@ flowchart TD
     Q --> R[Convertir número m de vuelta al mensaje M]
     R --> S[Mensaje original M recuperado]
     S --> T[Fin]
+
 
     
