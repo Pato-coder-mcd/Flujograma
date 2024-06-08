@@ -7,24 +7,25 @@ flowchart TD
     A[Inicio] --> B[Generación de Claves]
     B --> C[Seleccionar dos números primos grandes p y q]
     C --> D[Calcular n = p * q]
-    D --> E[Calcular la función totiente phi(n) = (p - 1) * (q - 1)]
+    D --> E[Calcular la función totiente]
     E --> F[Elegir exponente de cifrado e]
     F --> G[Calcular exponente de descifrado d]
     G --> H{Claves generadas}
-    H --> I[Clave Pública: (e, n)]
-    H --> J[Clave Privada: (d, n)]
+    H --> I[Clave Publica: e y n]
+    H --> J[Clave Privada: d y n]
     
     J --> K[Cifrado]
-    K --> L[Convertir mensaje M en número m]
-    L --> M[Calcular texto cifrado c = m^e mod n]
-    M --> N[Enviar texto cifrado c]
+    K --> L[Convertir mensaje M en numero m]
+    L --> M[Calcular texto cifrado]
+    M --> N[Enviar texto cifrado]
 
     N --> O[Descifrado]
-    O --> P[Recibir texto cifrado c]
-    P --> Q[Calcular mensaje m = c^d mod n]
-    Q --> R[Convertir número m de vuelta al mensaje M]
+    O --> P[Recibir texto cifrado]
+    P --> Q[Calcular mensaje original]
+    Q --> R[Convertir numero m al mensaje original M]
     R --> S[Mensaje original M recuperado]
     S --> T[Fin]
+
 
 
     
